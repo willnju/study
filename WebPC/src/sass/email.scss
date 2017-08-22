@@ -1,0 +1,46 @@
+.email-container {
+    padding: 100px;
+    background: #f2f2f2;
+
+    .fail-section {
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+        color: #b23;
+        font-size: 16px;
+
+        .fa {
+            margin-right: 5px;
+            font-size: 18px;
+        }
+    }
+
+    .success-section {
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+        color: #393;
+        font-size: 16px;
+
+        .fa {
+            margin-right: 5px;
+            font-size: 18px;
+        }
+
+        .btn-start {
+            margin-top: 20px;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            padding: 0;
+            background: #09c;
+            color: #fff;
+
+            &:hover {
+                background: #0be;
+            }
+        }
+    }
+}

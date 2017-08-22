@@ -1,0 +1,18 @@
+/**
+ * @file index.scss
+ * @desc 入口样式，引入所有样式
+ * @author wangyong(1223427693@qq.com)
+ */
+@import "./base";
+@import "./common";
+@import "./plugin.scss";
+@import "./nav";
+@import "./share";
+@import "./footer";
+@import "./home";
+@import "./item";
+@import "./login";
+@import "./account";
+@import "./cart";
+@import "./catalog";
+@import "./email";

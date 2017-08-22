@@ -1,0 +1,465 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>React</title>
+        <!--[if lt IE 9]>
+        <script src="../../lib/html5shiv/html5shiv-printshiv.min.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="../../../dist/css/index.css">
+    </head>
+    <body>
+        <!--React app-->
+        <div id="app">
+            <!--头部导航栏-->
+            <header class="header">
+                <div class="header-wrapper">
+                    <div class="header-logo">
+                        <a class="link" href="https://www.nuuvem.com/"></a>
+                    </div>
+                    <div class="header-cart">
+                        <a class="link" href="javascript:;">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="cart-num">0</span>
+                        </a>
+                        <ul class="drop-items">
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">Sign out</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="header-nav">
+                        <nav class="nav-wrapper">
+                            <div class="nav-item games">
+                                <a href="javascript:;">
+                                    <i class="fa fa-gamepad"></i>
+                                    <span class="text">GAMES</span>
+                                </a>
+                                <ul class="drop-items">
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-item deals">
+                                <a href="javascript:;">
+                                    <i class="fa fa-tags"></i>
+                                    <span class="text">DEALS</span>
+                                </a>
+                                <ul class="drop-items">
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-item account">
+                                <a href="javascript:;">
+                                    <img class="acc-icon" src="http://dskhvldhwok3h.cloudfront.net/assets/fe/images/avatar-90fda28ac2f803f1c30ad92f6ea22858.jpg" alt="">
+                                    <span class="acc-name">Young</span>
+                                </a>
+                                <ul class="drop-items">
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">Sign out</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="search">
+                                <div class="search-wrapper">
+                                    <input placeholder="Search for Games" type="text" class="input" />
+                                    <a class="icon">
+                                        <i class="fa fa-search"></i>
+                                        <span class="text">&nbsp;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <!--主区域-->
+            <main class="main">
+                <div class="container account-container">
+                    <section class="account-section">
+                        <ul class="account-nav func-clearfix">
+                            <li class="nav-item">
+                                <a href="javascript:;">My Games</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:;">My Orders</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:;">My Account</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="javascript:;">销售游戏</a>
+                            </li>
+                        </ul>
+
+                        <!--销售中心-->
+                        <section class="account-sales">
+                            <div class=" account-nav-container func-clearfix">
+                                <aside class="nav-aside">
+                                    <ul class="nav">
+                                        <li class="nav-item active"><a href="javascript:;">销售产品</a></li>
+                                        <li class="nav-item"><a href="javascript:;">正在销售</a></li>
+                                        <li class="nav-item"><a href="javascript:;">销售历史记录</a></li>
+                                        <li class="nav-item"><a href="javascript:;">对账单</a></li>
+                                        <li class="nav-item"><a href="javascript:;">待释放资金</a></li>
+                                        <li class="nav-item"><a href="javascript:;">提现记录</a></li>
+                                    </ul>
+                                </aside>
+                                <div class="nav-content">
+                                    <!--销售产品-->
+                                    <div class="sales-product">
+                                        <h2 class='content-title'>销售产品<span class="info">(您剩余<a href="">5次免费销售</a>，超过限额将向您进行收费，每笔销售收取5%)</span></h2>
+                                        <div class="sales-group">
+                                            <label for="productName">产品名称</label>
+                                            <input type="text" id="productName" value="Young">
+                                        </div>
+                                        <div class="sales-group">
+                                            <label for="cdkey">激活码</label>
+                                            <input type="text" id="cdkey" value="Young">
+                                        </div>
+                                        <div class="sales-group">
+                                            <label for="price">零售价格</label>
+                                            <input type="text" id="price" value="Young">
+                                        </div>
+                                        <div class="btn-group func-clearfix">
+                                            <a href="javascript:;" class="btn btn-save"><i class="fa fa-check"></i>更新产品</a>
+                                        </div>
+                                    </div>
+
+                                    <!--正在销售-->
+                                    <div class="sales-onsale">
+                                        <h2 class='content-title'>正在销售</h2>
+                                        <div class="onsale-header">
+                                            <div class="toolbar">
+                                                <div class="search">
+                                                    <input type="text" placeholder="输入游戏名" />
+                                                    <a class="icon" href="javascript:;"><i class="fa fa-search"></i>&nbsp;</a>
+                                                </div>
+                                                <!--<div class="sort">
+                                                    <span class="sort-title">排序：</span>
+                                                    <ul class="sort-ways">
+                                                        <li class="sort-way">
+                                                            <a href="javascript;">销量</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>-->
+                                            </div>
+                                        </div>
+                                        <div class="onsale-main func-clearfix">
+                                            <a href="javascript:;" class="game-onsale">
+                                                <div class="game-img"></div>
+                                                <div class="game-content">
+                                                    <h3 class="title">神偷4</h3>
+                                                    <p class="count">3件已售出，共有10件</p>
+                                                    <p class="price"><span class="self">零售价:￥120<i class="fa fa-edit"></i></span><span class="market">商城最低价:￥110</span></p>
+                                                </div>
+                                            </a>
+                                            <a href="javascript:;" class="game-onsale">
+                                                <div class="game-img"></div>
+                                                <div class="game-content">
+                                                    <h3 class="title">神偷4</h3>
+                                                    <p class="count">3件已售出，共有10件</p>
+                                                    <p class="price"><span class="self">零售价:￥120<i class="fa fa-edit"></i></span><span class="market">商城最低价:￥110</span></p>
+                                                </div>
+                                            </a>
+                                            <a href="javascript:;" class="game-onsale">
+                                                <div class="game-img"></div>
+                                                <div class="game-content">
+                                                    <h3 class="title">神偷4</h3>
+                                                    <p class="count">3件已售出，共有10件</p>
+                                                    <p class="price"><span class="self">零售价:￥120<i class="fa fa-edit"></i></span><span class="market">商城最低价:￥110</span></p>
+                                                </div>
+                                            </a>
+                                            <a href="javascript:;" class="game-onsale">
+                                                <div class="game-img"></div>
+                                                <div class="game-content">
+                                                    <h3 class="title">神偷4</h3>
+                                                    <p class="count">3件已售出，共有10件</p>
+                                                    <p class="price"><span class="self">零售价:￥120<i class="fa fa-edit"></i></span><span class="market">商城最低价:￥110</span></p>
+                                                </div>
+                                            </a>
+                                            <a href="javascript:;" class="game-onsale">
+                                                <div class="game-img"></div>
+                                                <div class="game-content">
+                                                    <h3 class="title">神偷4</h3>
+                                                    <p class="count">3件已售出，共有10件</p>
+                                                    <p class="price"><span class="self">零售价:￥120<i class="fa fa-edit"></i></span><span class="market">商城最低价:￥110</span></p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!--销售历史记录-->
+                                    <div class="sales-history">
+                                        <h2 class='content-title'>销售历史记录</h2>
+                                        <table class="history-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>游戏</th>
+                                                    <th>激活码</th>
+                                                    <th>价格</th>
+                                                    <th>销售日期</th>
+                                                    <th>购买用户</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>神偷4</td>
+                                                    <td>XXXXXXXXXXXXXXXXXX</td>
+                                                    <td>￥120</td>
+                                                    <td>2017-03-12 12:33:12</td>
+                                                    <td>hello world</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>神偷4</td>
+                                                    <td>XXXXXXXXXXXXXXXXXX</td>
+                                                    <td>￥120</td>
+                                                    <td>2017-03-12 12:33:12</td>
+                                                    <td>hello world</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>神偷4</td>
+                                                    <td>XXXXXXXXXXXXXXXXXX</td>
+                                                    <td>￥120</td>
+                                                    <td>2017-03-12 12:33:12</td>
+                                                    <td>hello world</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>神偷4</td>
+                                                    <td>XXXXXXXXXXXXXXXXXX</td>
+                                                    <td>￥120</td>
+                                                    <td>2017-03-12 12:33:12</td>
+                                                    <td>hello world</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <!--对账单-->
+                                    <div class="sales-bill">
+                                        <h2 class='content-title'>对账单</h2>
+                                        <table class="bill-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>类型</th>
+                                                    <th>数量</th>
+                                                    <th>价格</th>
+                                                    <th>创建时间</th>
+                                                    <th>状态</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="type">
+                                                        <p>产品：2016010300100402030</p>
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>￥120</td>
+                                                    <td>2017-03-12 12:33:12</td>
+                                                    <td class="status">
+                                                        <p>无效key<a href="javascript:;" class="btn">创建客服单</a></p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>提现手续费</p>
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>￥120</td>
+                                                    <td>2017-03-12 12:33:12</td>
+                                                    <td>完成</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="type">
+                                                        <p>产品：2016010300100402030</p>
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>￥120</td>
+                                                    <td>2017-03-12 12:33:12</td>
+                                                    <td class="status">
+                                                        <p>无效key<a href="javascript:;" class="btn">创建客服单</a></p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>提现手续费</p>
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>￥120</td>
+                                                    <td>2017-03-12 12:33:12</td>
+                                                    <td>完成</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <!--提现部分-->
+                                    <div class="sales-withdraw">
+                                        <h2 class='content-title'>待释放资金</h2>
+                                        <div class="withdraw-header">
+                                            <div class="cash-detail func-clearfix">
+                                                <div class="balance func-clearfix">
+                                                    <div class="balance-detail">
+                                                        <p class="price-label">账户余额：</p>
+                                                        <p class="price-detail">￥90</p>
+                                                    </div>
+                                                    <div class="btn-group">
+                                                        <a href="javascript:;" class="btn">提现</a>
+                                                    </div>
+                                                </div>
+                                                <div class="income">
+                                                    <div class="income-detail">
+                                                        <p class="price-label">今日收入：</p>
+                                                        <p class="price-detail">￥0</p>
+                                                    </div>
+                                                </div>
+                                                <div class="lock">
+                                                    <div class="lock-detail">
+                                                        <p class="price-label">锁定金额：</p>
+                                                        <p class="price-detail">￥0</p>
+                                                        <p><a href="">为什么锁定？</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="withdraw-detial">
+                                            <div class="input-group">
+                                                <label class="label" for="withdrawPrice">提现金额</label>
+                                                <input type="text" id="producwithdrawPricetName" />
+                                            </div>
+                                            <div class="type-group">
+                                                <label class="label">收款账户</label>
+                                                <span class="radio-group">
+                                                    <input type="radio" id="bankcard" />
+                                                    <label for="bankcard" class="radio-label">银行卡（推荐）</label>
+                                                </span>
+                                                <span class="radio-group">
+                                                    <input type="radio" id="alipay" />
+                                                    <label for="alipay" class="radio-label">支付宝</label>
+                                                </span>
+                                            </div>
+                                            <div class="type-detail-group">
+                                                <!--选中银行-->
+                                                <div class="type-bank">
+                                                    <div class="bank">
+                                                        <label class="label">&nbsp;</label>
+                                                        <select>
+                                                            <option value="">工商银行</option>
+                                                            <option value="">招商银行</option>
+                                                        </select>
+                                                        <input type="text" placeholder="请输入银行卡号" />
+                                                        <input type="text" placeholder="收款人姓名" />
+                                                        <!--<a href="javascript:;" class="btn">保存</a>-->
+                                                        <p class="warning">
+                                                            提现请保存真实姓名，否则将无法转账。
+                                                        </p>
+                                                    </div>
+                                                    <div class="method func-clearfix">
+                                                        <label class="label">提现类型</label>
+                                                        <div class="options">
+                                                            <p class="radio-group">
+                                                                <input type="radio" />
+                                                                <label class="radio-label">极速提现，1%手续费，9:30-21:00，2小时内到账。</label>
+                                                            </p>
+                                                            <p class="radio-group">
+                                                                <input type="radio" />
+                                                                <label class="radio-label">快速提现，0.6%手续费，12小时内到账。</label>
+                                                            </p>
+                                                            <p class="radio-group">
+                                                                <input type="radio" />
+                                                                <label class="radio-label">正常提现，免手续费，72小时内到账。</label>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="btn-group">
+                                                        <a href="javascript:;" class="btn">提交审核</a>
+                                                    </div>
+                                                </div>
+                                                <!--选中支付宝-->
+                                                <div class="type-alipay">
+                                                    <div class="alipay">
+                                                        <label class="label">&nbsp;</label>
+                                                        <input type="text" placeholder="请输入支付宝账户" />
+                                                        <input type="text" placeholder="收款人姓名" />
+                                                    </div>
+                                                    <div class="method func-clearfix">
+                                                        <label class="label">提现类型</label>
+                                                        <div class="options">
+                                                            <p class="radio-group">
+                                                                <input type="radio" />
+                                                                <label class="radio-label">极速提现，1%手续费，9:30-21:00，2小时内到账。</label>
+                                                            </p>
+                                                            <p class="radio-group">
+                                                                <input type="radio" />
+                                                                <label class="radio-label">快速提现，0.6%手续费，12小时内到账。</label>
+                                                            </p>
+                                                            <p class="radio-group">
+                                                                <input type="radio" />
+                                                                <label class="radio-label">正常提现，免手续费，72小时内到账。</label>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="btn-group">
+                                                        <a href="javascript:;" class="btn">提交审核</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <h2 class='content-title'>提现记录</h2>
+                                        <table class="withdraw-history">
+                                            <thead>
+                                                <tr>
+                                                    <th>订单号</th>
+                                                    <th>收款信息</th>
+                                                    <th>手续费</th>
+                                                    <th>状态</th>
+                                                    <th>申请时间</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>124241414124</td>
+                                                    <td>李敏，工商银行，32030302030230023，￥120</td>
+                                                    <td>￥12</td>
+                                                    <td>完成</td>
+                                                    <td>2017-01-12 12:12:23</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>124241414124</td>
+                                                    <td>李敏，工商银行，32030302030230023，￥120</td>
+                                                    <td>￥12</td>
+                                                    <td>完成</td>
+                                                    <td>2017-01-12 12:12:23</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>124241414124</td>
+                                                    <td>李敏，工商银行，32030302030230023，￥120</td>
+                                                    <td>￥12</td>
+                                                    <td>完成</td>
+                                                    <td>2017-01-12 12:12:23</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>124241414124</td>
+                                                    <td>李敏，工商银行，32030302030230023，￥120</td>
+                                                    <td>￥12</td>
+                                                    <td>完成</td>
+                                                    <td>2017-01-12 12:12:23</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

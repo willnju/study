@@ -1,0 +1,195 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>React</title>
+        <!--[if lt IE 9]>
+        <script src="../../lib/html5shiv/html5shiv-printshiv.min.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="../../../dist/css/index.css">
+    </head>
+    <body>
+        <!--React app-->
+        <div id="app">
+            <!--头部导航栏-->
+            <header class="header">
+                <div class="header-wrapper">
+                    <div class="header-logo">
+                        <a class="link" href="https://www.nuuvem.com/"></a>
+                    </div>
+                    <div class="header-cart">
+                        <a class="link" href="javascript:;">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="cart-num">0</span>
+                        </a>
+                        <ul class="drop-items">
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">Sign out</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="header-nav">
+                        <nav class="nav-wrapper">
+                            <div class="nav-item games">
+                                <a href="javascript:;">
+                                    <i class="fa fa-gamepad"></i>
+                                    <span class="text">GAMES</span>
+                                </a>
+                                <ul class="drop-items">
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-item deals">
+                                <a href="javascript:;">
+                                    <i class="fa fa-tags"></i>
+                                    <span class="text">DEALS</span>
+                                </a>
+                                <ul class="drop-items">
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-item account">
+                                <a href="javascript:;">
+                                    <img class="acc-icon" src="http://dskhvldhwok3h.cloudfront.net/assets/fe/images/avatar-90fda28ac2f803f1c30ad92f6ea22858.jpg" alt="">
+                                    <span class="acc-name">Young</span>
+                                </a>
+                                <ul class="drop-items">
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">Sign out</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="search">
+                                <div class="search-wrapper">
+                                    <input placeholder="Search for Games" type="text" class="input" />
+                                    <a class="icon">
+                                        <i class="fa fa-search"></i>
+                                        <span class="text">&nbsp;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <!--主区域-->
+            <main class="main">
+                <!--账号详情-->
+                <div class="container account-container">
+                    <section class="account-section">
+                        <ul class="account-nav func-clearfix">
+                            <li class="nav-item">
+                                <a href="javascript:;">My Games</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:;">My Orders</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:;">My Account</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="javascript:;">销售游戏</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="javascript:;">客服中心</a>
+                            </li>
+                        </ul>
+
+                        <!--客服中心-->
+                        <section class="account-services">
+                            <div class=" account-nav-container func-clearfix">
+                                <aside class="nav-aside">
+                                    <ul class="nav">
+                                        <li class="nav-item active"><a href="javascript:;">创建客服单</a></li>
+                                        <li class="nav-item"><a href="javascript:;">处理中心</a></li>
+                                    </ul>
+                                </aside>
+                                <div class="nav-content">
+                                    <!--创建客服单-->
+                                    <div class="services-create">
+                                        <h2 class='content-title'>创建客服单</h2>
+                                        <div class="services-group">
+                                            <label for="contactEmail">联系邮箱</label>
+                                            <input type="text" id="contactEmail" value="Young">
+                                        </div>
+                                        <div class="services-group">
+                                            <label for="productID">订单号</label>
+                                            <input type="text" id="productID" value="Young">
+                                        </div>
+                                        <div class="services-group">
+                                            <label for="cdkey">CDKEY</label>
+                                            <input type="text" id="cdkey" value="Young">
+                                        </div>
+                                        <div class="services-group">
+                                            <label for="title">标题</label>
+                                            <input type="text" id="title" value="Young">
+                                        </div>
+                                        <div class="services-group textarea-group">
+                                            <label for="desc">问题描述</label>
+                                            <textarea rows="3" type="text" id="desc"></textarea>
+                                        </div>
+                                        <div class="btn-group func-clearfix">
+                                            <a href="javascript:;" class="btn btn-save"><i class="fa fa-check"></i>发送</a>
+                                        </div>
+                                    </div>
+
+                                    <!--处理中心-->
+                                    <div class="services-deals">
+                                        <h2 class='content-title'>处理中心</h2>
+                                        <table class="deals-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>订单号</th>
+                                                    <th>ID</th>
+                                                    <th>CDKEY</th>
+                                                    <th>标题</th>
+                                                    <th>状态</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>201723293203049</td>
+                                                    <td>RFD-2235235325</td>
+                                                    <td>XXXXXXXXXXXXXXXXXX</td>
+                                                    <td>title title title title</td>
+                                                    <td>完成</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>201723293203049</td>
+                                                    <td>RFD-2235235325</td>
+                                                    <td>XXXXXXXXXXXXXXXXXX</td>
+                                                    <td>title title title title</td>
+                                                    <td>完成</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>201723293203049</td>
+                                                    <td>RFD-2235235325</td>
+                                                    <td>XXXXXXXXXXXXXXXXXX</td>
+                                                    <td>title title title title</td>
+                                                    <td>完成</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>201723293203049</td>
+                                                    <td>RFD-2235235325</td>
+                                                    <td>XXXXXXXXXXXXXXXXXX</td>
+                                                    <td>title title title title</td>
+                                                    <td>完成</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

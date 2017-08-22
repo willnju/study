@@ -1,0 +1,275 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>React</title>
+    <!--[if lt IE 9]>
+    <script src="../../lib/html5shiv/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../dist/css/index.css">
+</head>
+<body>
+<!--React app-->
+<div id="app">
+    <div>
+    <!--头部导航栏-->
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="header-logo">
+                <a class="link" href="https://www.nuuvem.com/"></a>
+            </div>
+            <div class="header-cart">
+                <a class="link" href="javascript:;">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="cart-num">0</span>
+                </a>
+                <ul class="drop-items">
+                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">Sign out</span></a></li>
+                </ul>
+            </div>
+            <div class="header-nav">
+                <nav class="nav-wrapper">
+                    <div class="nav-item games">
+                        <a href="javascript:;">
+                            <i class="fa fa-gamepad"></i>
+                            <span class="text">GAMES</span>
+                        </a>
+                        <ul class="drop-items">
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-item deals">
+                        <a href="javascript:;">
+                            <i class="fa fa-tags"></i>
+                            <span class="text">DEALS</span>
+                        </a>
+                        <ul class="drop-items">
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-item account">
+                        <a href="javascript:;">
+                            <img class="acc-icon" src="http://dskhvldhwok3h.cloudfront.net/assets/fe/images/avatar-90fda28ac2f803f1c30ad92f6ea22858.jpg" alt="">
+                            <span class="acc-name">Young</span>
+                        </a>
+                        <ul class="drop-items">
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">Sign out</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <div class="search-wrapper">
+                            <input placeholder="Search for Games" type="text" class="input" />
+                            <a class="icon">
+                                <i class="fa fa-search"></i>
+                                <span class="text">&nbsp;</span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--主区域-->
+    <main class="main">
+        <!--游戏详情页-->
+        <div class="container item-container">
+            <div class="item-hero"></div>
+            <div class="item-detail">
+                <header class="item-detail-head func-clearfix">
+                    <div class="detail-img"></div>
+                    <div class="detail-title">
+                        <h2 class="title">Crusader Kings II: Monks and Mystics</h2>
+                        <ul class="os func-clearfix">
+                            <li><i class="fa fa-windows"></i>WINDOWS</li>
+                            <li><i class="fa fa-apple"></i>MAC</li>
+                            <li><i class="fa fa-linux"></i>LINUX</li>
+                        </ul>
+                    </div>
+                </header>
+                <section class="item-detail-main func-clearfix">
+                    <!--游戏详情-->
+                    <div class="detail-main-gallery">
+                        <div class="item-gallery">
+                            <div class="item-gallery-wrapper">
+                                <a href="javascript:;" class="item-gallery-nav item-gallery-nav-pre">
+                                    <i class="fa fa-chevron-left"></i>&nbsp;
+                                </a>
+                                <a href="javascript:;" class="item-gallery-nav item-gallery-nav-next">
+                                    <i class="fa fa-chevron-right"></i>&nbsp;
+                                </a>
+                            </div>
+                            <div class="item-gallery-thumbs">
+                                <ul class="thumbs">
+                                    <li class="thumbs-item"><a class="thumbs-item-mask" href="javascript:;"></a></li>
+                                    <li class="thumbs-item"><a class="thumbs-item-mask" href="javascript:;"></a></li>
+                                    <li class="thumbs-item"><a class="thumbs-item-mask" href="javascript:;"></a></li>
+                                    <li class="thumbs-item"><a class="thumbs-item-mask" href="javascript:;"></a></li>
+                                    <li class="thumbs-item"><a class="thumbs-item-mask" href="javascript:;"></a></li>
+                                    <li class="thumbs-item"><a class="thumbs-item-mask" href="javascript:;"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-info">
+                                <h3 class="item-info-title">About the game</h3>
+                                <p class="item-info-content">Revolutionary 3D cell-animation graphics further refined, and more game contents added! The next-generation fighting game "GUILTY GEAR Xrd -REVELATOR-" is now out on Nuuvem!
+                                    Carrying on the legacy from 1998, comes the next addition to the "Guilty Gear" series! All visuals have been tweaked to the finest detail and hand-polished by the animation masters to produce the top quality hand-drawn anime effect! Game contents revamped to provide for gamers of all skill levels, you cannot miss out on this one!</p>
+                            </div>
+                            <div class="item-require">
+                                <h3 class="item-require-title">System Requirements</h3>
+                                <ul class="item-require-os func-clearfix">
+                                    <li><i class="fa fa-windows"></i>WINDOWS</li>
+                                    <li><i class="fa fa-apple"></i>MAC</li>
+                                    <li><i class="fa fa-linux"></i>LINUX</li>
+                                </ul>
+                                <div class="item-require-mini">
+                                    <h4 class="title">MINIMUM</h4>
+                                    <ul class="details">
+                                        <li class="detail">
+                                            <span class="label">OS:</span>
+                                            <span class="value">Windows 7/8/10 (64Bit)</span>
+                                        </li>
+                                        <li class="detail">
+                                            <span class="label">Storage:</span>
+                                            <span class="value">10 GB</span>
+                                        </li>
+                                        <li class="detail">
+                                            <span class="label">Processor:</span>
+                                            <span class="value">Intel Compatible 2.1 GHz Dual Core</span>
+                                        </li>
+                                        <li class="detail">
+                                            <span class="label">Memory:</span>
+                                            <span class="value">4 GB</span>
+                                        </li>
+                                        <li class="detail">
+                                            <span class="label">Graphics:</span>
+                                            <span class="value">GTX460 2GB</span>
+                                        </li>
+                                        <li class="detail">
+                                            <span class="label">DirectX:</span>
+                                            <span class="value">11</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--侧边栏，购买游戏-->
+                    <div class="detail-main-aside">
+                        <div class="game-prices">
+                            <div class="game-buy func-clearfix">
+                                <div class="price">￥105</div>
+                                <div class="cart"><a href="javascript:;" class="add-to-cart"><i class="fa fa-cart-plus"></i>加入购物车</a></div>
+                            </div>
+                            <div class="game-platform">
+                                <label class="label">平台</label>
+                                <select class="platforms">
+                                    <option value="">Origin</option>
+                                    <option value="">XBOX</option>
+                                    <option value="">PS4</option>
+                                </select>
+                            </div>
+                            <div class="game-version">
+                                <label class="label">版本</label>
+                                <select class="versions">
+                                    <option value="">标准</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="game-other-sellers">
+                            <h3 class="title">其他价格卖家排行</h3>
+                            <ul class="sellers">
+                                <li class="seller func-clearfix">
+                                    <span class="price">￥102</span>
+                                    <span class="buy">
+                                        <a href="javascript:;">&nbsp;<i class="fa fa-cart-plus"></i></a>
+                                    </span>
+                                    <span class="seller-info">
+                                        <span class="seller-name">飞翔的企鹅</span>
+                                        <span class="seller-star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </span>
+                                        <span class="seller-feed">96%</span>
+                                    </span>
+                                </li>
+                                <li class="seller func-clearfix">
+                                    <span class="price">￥102</span>
+                                    <span class="buy">
+                                        <a href="javascript:;">&nbsp;<i class="fa fa-cart-plus"></i></a>
+                                    </span>
+                                    <span class="seller-info">
+                                        <span class="seller-name">飞翔的企鹅</span>
+                                        <span class="seller-star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </span>
+                                        <span class="seller-feed">96%</span>
+                                    </span>
+                                </li>
+                                <li class="seller func-clearfix">
+                                    <span class="price">￥102</span>
+                                    <span class="buy">
+                                        <a href="javascript:;">&nbsp;<i class="fa fa-cart-plus"></i></a>
+                                    </span>
+                                    <span class="seller-info">
+                                        <span class="seller-name">超长名称超长名称</span>
+                                        <span class="seller-star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </span>
+                                        <span class="seller-feed">96%</span>
+                                    </span>
+                                </li>
+                                <li class="seller func-clearfix">
+                                    <span class="price">￥102</span>
+                                    <span class="buy">
+                                        <a href="javascript:;">&nbsp;<i class="fa fa-cart-plus"></i></a>
+                                    </span>
+                                    <span class="seller-info">
+                                        <span class="seller-name">哈尔的移动城堡</span>
+                                        <span class="seller-star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </span>
+                                        <span class="seller-feed">96%</span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+    </div>
+</div>
+</body>
+</html>

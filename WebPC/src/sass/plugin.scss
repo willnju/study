@@ -1,0 +1,306 @@
+/**
+ * @file plugin.scss
+ * @desc 插件组件
+ * @author wangyong(1223427693@qq.com)
+ */
+// Message插件样式
+// .plugin-message-container {
+//     position: fixed;
+//     z-index: 99999;
+//     width: 100%;
+//     top: 0;
+//     left: 0;
+
+//     .plugin-message-wrap {
+//         margin-top: 80px;
+//         position: absolute;
+//         left: 50%;
+
+//         .plugin-message {
+//             position: relative;
+//             left: -50%;
+//             height: 40px;
+//             line-height: 40px;
+//             padding: 0 20px;
+//             border-radius: 5px;
+//             color: #fff;
+//             background: #263342;
+//             font-size: 14px;
+//             box-shadow: 0 2px 0 0 rgba(0,0,0,.1);
+//         }
+//     }
+// }
+@keyframes loading {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+.plugin-message {
+    position: fixed;
+    z-index: 99999;
+    max-width: 1060px;
+    top: 80px;
+    left: 20px;
+    right: 20px;
+    margin: auto;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    background: #09c;
+    box-shadow: 0 2px 0 0 rgba(0,0,0,.1);
+    text-align: center;
+    animation: fadeIn .5s ease;
+
+    &.fade-out {
+        animation: fadeOut .5s ease;
+    }
+
+    .fa {
+        font-size: 16px;
+        margin-right: 5px;
+    }
+
+    &.plugin-message__success {
+        background: #393;
+    }
+
+    &.plugin-message__warning {
+        background: #e63;
+    }
+
+    &.plugin-message__error {
+        background: #b23;
+    }
+
+    &.plugin-message__loading {
+        .fa {
+            animation: loading 1s linear infinite;
+        }
+    }
+}
+
+// 占位图
+.plugin-placeholder {
+    margin-top: 50px;
+    .element {
+        background: #ddd;
+    }
+    .ph-header {
+        height: 100px;
+        margin-bottom: 50px;
+        .left {
+            float: left;
+            width: 100px;
+            height: 100px;
+
+            .element {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .right {
+            padding-top: 20px;
+            margin-left: 150px;
+            height: 100%;
+
+            p.first {
+                width: 60%;
+                height: 20px;
+            }
+
+            p.second {
+                height: 20px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .ph-content {
+        .element {
+            height: 20px;
+            margin-top: 30px;
+        }
+
+        @keyframes sixPer {
+            0% { width: 60%; }
+            50% { width: 100%; }
+            100% { width: 60%; }
+        }
+        .first {
+            width: 60%;
+            animation: sixPer 2s ease infinite;
+        }
+        @keyframes fivePer {
+            0% { width: 100%; }
+            50% { width: 50%; }
+            100% { width: 100%; }
+        }
+        .second {
+            width: 100%;
+            animation: fivePer 2s ease infinite;
+        }
+        @keyframes eightPer {
+            0% { width: 80%; }
+            50% { width: 100%; }
+            100% { width: 80%; }
+        }
+        .third {
+            width: 80%;
+            animation: eightPer 2s ease infinite;
+        }
+    }
+}
+
+@keyframes overlayIn {
+    from { background: rgba(0, 0, 0, 0); }
+    to { background: rgba(0, 0, 0, .8); }
+}
+// 弹出框底层
+.plugin-overlay {
+    position: fixed;
+    z-index: 9999;
+    overflow: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .8);
+    padding: 20px 0;
+    // animation: overlayIn .3s ease-in-out;    
+}
+
+// 分页组件
+.plugin-pagination {
+    padding: 5px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    .ctrl {
+        color: #777;
+        font-size: 12px;
+        font-weight: normal;
+        margin: 0 5px;
+        
+        &.disabled {
+            opacity: .6;
+        }
+    }
+
+    .status {
+        margin: 0 10px;
+        font-weight: bold;
+        
+        .split {
+            margin: 0 10px;
+        }
+    }
+}
+
+// Modal组件
+.plugin-modal {
+    position: absolute;
+    width: 980px;
+    top: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: fadeIn .5s ease;
+
+    .modal-head {
+        position: relative;
+        padding: 0 20px;
+        height: 70px;
+        line-height: 70px;
+        background: #263342;
+        color: #fff;
+        border-radius: 5px 5px 0 0;
+
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .close {
+            position: absolute;
+            right: 20px;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            font-size: 24px;
+            color: #fff;
+            transition: opacity .2s ease;
+            font-weight: 300;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+    
+    .modal-content {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 0 0 5px 5px;
+    }
+}
+
+// Tabs组件
+.plugin-tabs {
+    .tabs {
+        height: 56px;
+        padding: 0 20px;
+        border-bottom: 1px solid #bbb;
+        .tab {
+            float: left;
+            height: 56px;
+            border-width: 1px 1px 0 1px;
+            border-color: transparent;
+            border-style: solid;
+            margin-bottom: -1px;
+            a {
+                display: block;
+                padding: 10px 30px 13px 30px;
+                border-top: 3px solid transparent;
+                font-size: 20px;
+                font-weight: 300;
+                color: #777;
+                &:hover {
+                    color: #444;
+                }
+            }
+        }
+
+        .active {
+            border-color: #bbb;
+            background: #fff;
+            border-top-color: #09c;
+            a {
+                border-color: #09c;
+                color: #444;
+            }
+        }
+    }
+}

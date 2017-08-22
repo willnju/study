@@ -1,0 +1,548 @@
+/**
+ * @file home.scss
+ * @desc 主页样式
+ * @author wangyong(1223427693@qq.com)
+ */
+@mixin normalBackgroundStyle {
+    background: {
+        repeat: no-repeat;
+        size: cover;
+        position: center;
+    }
+}
+// 首页轮播
+.home-container .home-section-hero {
+    padding: 25px 0;
+    background-image: url(../../static/section-hero-bg.jpeg);
+    @include normalBackgroundStyle;
+
+    .hero-slider-component {
+        position: relative;
+        width: 1200px;
+        margin: 0 auto;
+        height: 480px;
+
+        .side-nav {
+            position: absolute;
+            top: 200px;
+            font-size: 36px;
+            color: #777;
+            &:hover {
+                color: #09c;
+            }
+        }
+        .side-nav-pre {
+            left: -35px;
+        }
+        .side-nav-next {
+            right: -35px;
+        }
+
+        @media screen and (max-width: 1280px) {
+            .side-nav {
+                display: none;
+            }
+        }
+    }
+
+    .hero-slider-component .slider-container {
+        height: 440px;
+        box-shadow: 0 0 30px 0 rgba(0,0,0,.5);
+    }
+
+    .hero-slider-component .slider-container .slider-items {
+        height: 100%;
+
+        .items-left {
+            width: 800px;
+            float: left;
+            height: 100%;
+        }
+
+        .items-left .item {
+            width: 100%;
+            height: 100%;
+            @include normalBackgroundStyle;
+            background-image: url(../../static/slider-left-bg.jpg);
+            transition: all 1s ease;
+        }
+
+        .items-right {
+            width: 400px;
+            float: left;
+            height: 100%;
+        }
+
+        .items-right .item {
+            height: 50%;
+            @include normalBackgroundStyle;
+            background-image: url(../../static/slider-left-bg.jpg);
+            transition: all 1s ease;
+        }
+
+        .item {
+            display: block;
+            position: relative;
+            border: 1px solid transparent;
+        }
+        
+        .item .item-mask {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0);
+            transition: background .2s ease;
+        }
+
+        .item:hover .item-mask {
+            background: rgba(255, 255, 255, .1);
+        }
+
+        .item .item-content {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .item .item-content .top-price {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            left: 0;
+            font-size: 14px;
+        }
+
+        @mixin priceContainerStyle {
+            float: right;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+            box-shadow: 0 1px 0 rgba(204,204,204,.3);
+            font-weight: 900;
+            border-radius: 5px;
+        }
+        .item .item-content .top-price .price {
+            position: relative;
+            @include priceContainerStyle;
+            background: #fff;
+            padding: 0 20px;
+            color: #b23;
+
+            .price-pre {
+                font-size: 10px;
+                color: #777;
+                font-weight: 400;
+                vertical-align: bottom;
+                text-decoration: line-through;
+            }
+
+            .addto-cart {
+                opacity: 0;
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                border-radius: 5px;
+                background: #b23;
+                color: #fff;
+                transition: all .3s ease;
+                font-weight: 900;
+
+                &:hover {
+                    background: #e23;
+                }
+
+                .fa-cart-plus {
+                    font-size: 16px;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        .item:hover .item-content .top-price .price {
+            .addto-cart {
+                opacity: 1;
+            }
+        }
+
+        .item .item-content .top-price .discount {
+            @include priceContainerStyle;
+            padding: 0 10px;
+            margin-right: 5px;
+            background: #c66;
+            color: #fff;
+        }
+
+        .item .item-content .bottom-title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 15px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 150px;
+                background: linear-gradient(to top,#000 0,transparent 100%);
+            }
+
+            h3 {
+                position: relative;
+                z-index: 2;
+                color: #fff;
+                padding-left: 6px;
+                font-size: 18px;
+                font-weight: 700;
+                border-left: 4px solid #09c;                 
+            }
+        }
+    }
+
+    .hero-slider-component .slider-nav {
+        margin-top: 10px;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+        
+        .nav-pre, .nav-next {
+            font-size: 30px;
+            color: #777;
+            margin: 0 10px;
+            &:hover {
+                color: #09c;
+            }
+        }
+
+        .hero-nav-item {
+            color: #777;
+            font-size: 36px;
+            margin: 2px;
+
+            &.active {
+                color: #09c;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1281px) {
+        .slider-nav .nav-pre, .slider-nav .nav-next {
+            display: none;
+        }
+    }
+}
+
+// 游戏列表部分通用样式
+@mixin gameSectionComponentStyle {
+    width: 1080px;
+    margin: 0 auto;
+    position: relative;
+}
+@mixin gameSectionHeadStyle {
+    padding: 0 10px;
+    .title {
+        float: left;
+        color: #fff;
+        font-size: 28px;
+        font-weight: 300;
+    }
+    .more {
+        float: right;
+    }
+}
+
+// 首页特别游戏
+.home-container .home-section-special {
+    min-height: 330px;
+    padding: 15px 0 20px;
+    @include normalBackgroundStyle;
+    background-image: url(../../static/section-special-bg.jpg);
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 80%;
+        background: linear-gradient(to bottom,#000 0,transparent 100%);
+    }
+
+    .speical-component {
+        @include gameSectionComponentStyle;
+    }
+
+    .speical-component .special-head {
+        @include gameSectionHeadStyle;
+    }
+
+    .speical-component .special-content {
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .games-scroll {
+        overflow: hidden;
+
+        .placeholders {
+            padding: 0 10px;
+        }
+    }
+
+    .games-list {
+        position: relative;
+        margin-bottom: 20px;
+        transition: transform .4s ease;
+    }
+
+    .games-nav {
+        position: absolute;
+        top: 85px;
+        font-size: 46px;
+        color: #fff;
+        opacity: .8;
+
+        &:hover {
+            color: #09c;
+        }
+
+        &.disabled {
+            color: #bbb;
+            opacity: .6;
+            cursor: not-allowed;
+        }
+    }
+
+    .games-nav-pre {
+        left: -40px;
+    }
+
+    .games-nav-next {
+        right: -40px;
+    }
+}
+
+// 首页游戏交易列表部分
+.home-container .home-section-deals {
+    margin-top: 25px;
+
+    .deals-component {
+        @include gameSectionComponentStyle;
+    }
+
+    .deals-component .deals-head {
+        @include gameSectionHeadStyle;
+        .title {
+            color: #444;
+        }
+    }
+
+    .deals-component .deals-content {
+        margin-top: 20px;
+    }
+
+    .games-list {
+        margin-bottom: 20px;
+    }
+
+}
+
+// 最新、折扣、预售游戏列表组
+.home-container .home-section-group {
+    margin-top: 25px;
+
+    .group-component {
+        @include gameSectionComponentStyle();
+        position: relative;
+
+        .more {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+
+        .placeholders {
+            padding: 0 10px;
+        }
+    }
+
+    .group-tabs {
+        .tabs {
+            margin: 0 10px;
+        }
+
+        .tabs .active {
+            background: linear-gradient(to bottom,#ddd 0,#ccc 100%);
+        }
+    } 
+
+    // 游戏组
+    .home-component-games {
+        margin-top: 15px;
+    }
+}
+
+// 首页最新游戏列表部分
+.home-container .home-section-latest {
+    margin-top: 25px;
+
+    .latest-component {
+        @include gameSectionComponentStyle;
+    }
+
+    .latest-component .latest-head {
+        @include gameSectionHeadStyle;
+        .title {
+            color: #444;
+        }
+    }
+
+    .latest-component .latest-content {
+        margin-top: 20px;
+
+        .placeholders {
+            padding: 0 10px;
+        }
+    }
+
+    .games-list {
+        margin-bottom: 20px;
+    }
+
+}
+
+// 首页流行游戏列表
+.home-container .home-section-popular {
+    margin-top: 25px;
+
+    .popular-component {
+        @include gameSectionComponentStyle;
+    }
+
+    .popular-component .popular-head {
+        @include gameSectionHeadStyle;
+        .title {
+            color: #444;
+        }
+    }
+
+    .popular-component .popular-content {
+        margin-top: 20px;
+
+        .placeholders {
+            padding: 0 10px;
+        }
+    }
+
+    .game-card-long {
+        float: left;
+        width: 340px;
+        height: 94px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        background: #eee;
+        box-shadow: 0 2px 0 0 rgba(0,0,0,.1);
+        transition: background .2s ease;
+
+        &:hover {
+            background: #fff;
+        }
+
+        &:hover .pg-btn-price {
+            border: none;
+
+            .addto-cart {
+                opacity: 1;
+            }
+        } 
+
+        .game-card-content {
+            width: 100%;
+            height: 100%;
+        }
+
+        .game-img {
+            position: relative;
+            float: left;
+            width: 50%;
+            height: 100%;
+            @include normalBackgroundStyle;
+            background-image: url(../../static/section-hero-bg.jpeg);
+
+            .count {
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                line-height: 18px;
+                border-radius: 9999px;
+                left: -9px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                text-align: center;
+                background: #b23;
+                color: #fff;
+                font-size: 11px;
+            }
+        }
+
+        .game-info {
+            float: right;
+            width: 50%;
+            height: 100%;
+            padding-left: 10px;
+        }
+
+        .game-info .game-title {
+            font-size: 14px;
+            color: #444;
+            font-weight: normal;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .game-info .game-os {
+            margin: 5px 0;
+            color: #bbb;
+            font-size: 14px;
+            
+            li {
+                float: left;
+                margin-right: 5px;
+            }
+        }
+
+        .game-info .game-current {
+            margin: 5px 0;
+            font-size: 12px;
+            color: #bbb;
+            font-weight: normal;
+
+            .version {
+                margin-left: 10px;
+            }
+        }
+
+        .game-info .game-price-detail .game-price {
+            width: 100%;
+        }
+
+        .game-info .game-price-detail .game-discount {
+            margin-right: 5px;
+            vertical-align: bottom;
+        }
+
+    }
+
+}

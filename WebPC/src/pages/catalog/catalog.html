@@ -1,0 +1,758 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>React</title>
+        <!--[if lt IE 9]>
+        <script src="../../lib/html5shiv/html5shiv-printshiv.min.js"></script>
+        <![endif]-->
+        <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../dist/css/index.css">
+    </head>
+    <body>
+        <!--React app-->
+        <div id="app">
+            <!--头部导航栏-->
+            <header class="header">
+                <div class="header-wrapper">
+                    <div class="header-logo">
+                        <a class="link" href="https://www.nuuvem.com/"></a>
+                    </div>
+                    <div class="header-cart">
+                        <a class="link" href="javascript:;">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="cart-num">0</span>
+                        </a>
+                        <ul class="drop-items">
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">Sign out</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="header-nav">
+                        <nav class="nav-wrapper">
+                            <div class="nav-item games">
+                                <a href="javascript:;">
+                                    <i class="fa fa-gamepad"></i>
+                                    <span class="text">GAMES</span>
+                                </a>
+                                <ul class="drop-items">
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-item deals">
+                                <a href="javascript:;">
+                                    <i class="fa fa-tags"></i>
+                                    <span class="text">DEALS</span>
+                                </a>
+                                <ul class="drop-items">
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-item account">
+                                <a href="javascript:;">
+                                    <img class="acc-icon" src="http://dskhvldhwok3h.cloudfront.net/assets/fe/images/avatar-90fda28ac2f803f1c30ad92f6ea22858.jpg" alt="">
+                                    <span class="acc-name">Young</span>
+                                </a>
+                                <ul class="drop-items">
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">Sign out</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="search">
+                                <div class="search-wrapper">
+                                    <input placeholder="Search for Games" type="text" class="input" />
+                                    <a class="icon">
+                                        <i class="fa fa-search"></i>
+                                        <span class="text">&nbsp;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <!--主区域-->
+            <main class="main">
+                <!--注册登录页-->
+                <div class="container catalog-container">
+                    <header class="bl-top">
+                        <h1 class="tt">Catalog</h1>
+                        <div class="bar-filter">
+                            <div class="bar-filter-item">
+                                <p class="tt">Categories</p>
+                                <ul>
+                                    <li>
+                                        <input type="radio">
+                                        <label>Action</label>
+                                    </li>
+
+                                    <li>
+                                        <input type="radio">
+                                        <label>Adventure</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bar-filter-item">
+                                <p class="tt">Publisher</p>
+                                <ul>
+                                    <li>
+                                        <input type="radio">
+                                        <label>Action</label>
+                                    </li>
+
+                                    <li>
+                                        <input type="radio">
+                                        <label>Adventure</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bar-filter-item">
+                                <p class="tt">Price</p>
+                                <ul>
+                                    <li>
+                                        <input type="radio">
+                                        <label>Action</label>
+                                    </li>
+
+                                    <li>
+                                        <input type="radio">
+                                        <label>Adventure</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bar-filter-order">
+                                <p>Sort by:</p>
+                                <ul>
+                                    <li>
+                                        <a>Title</a>
+                                    </li>
+                                    <li>
+                                        <a>Title</a>
+                                    </li>
+                                    <li>
+                                        <a>Title</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </header>
+
+                    <div class="products">
+                        <div class="products-main">
+                            <div class="products-grid">
+                                <div class="products-card">
+                                    <a>
+                                        <div class="product-img">
+                                            <img src="../../img/mock.jpg">
+                                            <span class="product-badge">DLC</span>
+                                        </div>
+
+                                        <div class="product-card-content">
+                                            <div class="product-card-content-wrapper">
+                                                <h3 class="product-title">
+                                                    (DLC)Middle-earth Shadow of Mordor - GOTY Edition upgrade
+                                                </h3>
+                                                <div style="display: flex">
+                                                    <ul class="product-os-info">
+                                                        <li title="Windows">
+                                                            <i class="fa fa-windows">
+                                                                
+                                                            </i>
+                                                            
+                                                        </li>
+
+                                                    </ul>
+
+                                                    <ul class="product-drm-info">
+                                                        <li>
+                                                            <i class="fa fa-steam"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="product-card-footer">
+                                            <button class="product-btn-add-to-cart">
+                                                <span>$9.99</span>
+                                            </button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="products-grid">
+                                <div class="products-card">
+                                    <a>
+                                        <div class="product-img">
+                                            <img src="../../img/mock.jpg">
+                                            <span class="product-badge">DLC</span>
+                                        </div>
+
+                                        <div class="product-card-content">
+                                            <div class="product-card-content-wrapper">
+                                                <h3 class="product-title">
+                                                    (DLC)Middle-earth Shadow of Mordor - GOTY Edition upgrade
+                                                </h3>
+                                                <div style="display: flex">
+                                                    <ul class="product-os-info">
+                                                        <li title="Windows">
+                                                            <i class="fa fa-windows">
+                                                                
+                                                            </i>
+                                                            
+                                                        </li>
+
+                                                    </ul>
+
+                                                    <ul class="product-drm-info">
+                                                        <li>
+                                                            <i class="fa fa-steam"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="product-card-footer">
+                                            <button class="product-btn-add-to-cart">
+                                                <span>$9.99</span>
+                                            </button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="products-grid">
+                                <div class="products-card">
+                                    <a>
+                                        <div class="product-img">
+                                            <img src="../../img/mock.jpg">
+                                            <span class="product-badge">DLC</span>
+                                        </div>
+
+                                        <div class="product-card-content">
+                                            <div class="product-card-content-wrapper">
+                                                <h3 class="product-title">
+                                                    (DLC)Middle-earth Shadow of Mordor - GOTY Edition upgrade
+                                                </h3>
+                                                <div style="display: flex">
+                                                    <ul class="product-os-info">
+                                                        <li title="Windows">
+                                                            <i class="fa fa-windows">
+                                                                
+                                                            </i>
+                                                            
+                                                        </li>
+
+                                                    </ul>
+
+                                                    <ul class="product-drm-info">
+                                                        <li>
+                                                            <i class="fa fa-steam"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="product-card-footer">
+                                            <button class="product-btn-add-to-cart">
+                                                <span>$9.99</span>
+                                            </button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="products-grid">
+                                <div class="products-card">
+                                    <a>
+                                        <div class="product-img">
+                                            <img src="../../img/mock.jpg">
+                                            <span class="product-badge">DLC</span>
+                                        </div>
+
+                                        <div class="product-card-content">
+                                            <div class="product-card-content-wrapper">
+                                                <h3 class="product-title">
+                                                    (DLC)Middle-earth Shadow of Mordor - GOTY Edition upgrade
+                                                </h3>
+                                                <div style="display: flex">
+                                                    <ul class="product-os-info">
+                                                        <li title="Windows">
+                                                            <i class="fa fa-windows">
+                                                                
+                                                            </i>
+                                                            
+                                                        </li>
+
+                                                    </ul>
+
+                                                    <ul class="product-drm-info">
+                                                        <li>
+                                                            <i class="fa fa-steam"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="product-card-footer">
+                                            <button class="product-btn-add-to-cart">
+                                                <span>$9.99</span>
+                                            </button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="products-grid">
+                                <div class="products-card">
+                                    <a>
+                                        <div class="product-img">
+                                            <img src="../../img/mock.jpg">
+                                            <span class="product-badge">DLC</span>
+                                        </div>
+
+                                        <div class="product-card-content">
+                                            <div class="product-card-content-wrapper">
+                                                <h3 class="product-title">
+                                                    (DLC)Middle-earth Shadow of Mordor - GOTY Edition upgrade
+                                                </h3>
+                                                <div style="display: flex">
+                                                    <ul class="product-os-info">
+                                                        <li title="Windows">
+                                                            <i class="fa fa-windows">
+                                                                
+                                                            </i>
+                                                            
+                                                        </li>
+
+                                                    </ul>
+
+                                                    <ul class="product-drm-info">
+                                                        <li>
+                                                            <i class="fa fa-steam"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="product-card-footer">
+                                            <button class="product-btn-add-to-cart">
+                                                <span>$9.99</span>
+                                            </button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="products-grid">
+                                <div class="products-card">
+                                    <a>
+                                        <div class="product-img">
+                                            <img src="../../img/mock.jpg">
+                                            <span class="product-badge">DLC</span>
+                                        </div>
+
+                                        <div class="product-card-content">
+                                            <div class="product-card-content-wrapper">
+                                                <h3 class="product-title">
+                                                    (DLC)Middle-earth Shadow of Mordor - GOTY Edition upgrade
+                                                </h3>
+                                                <div style="display: flex">
+                                                    <ul class="product-os-info">
+                                                        <li title="Windows">
+                                                            <i class="fa fa-windows">
+                                                                
+                                                            </i>
+                                                            
+                                                        </li>
+
+                                                    </ul>
+
+                                                    <ul class="product-drm-info">
+                                                        <li>
+                                                            <i class="fa fa-steam"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="product-card-footer">
+                                            <button class="product-btn-add-to-cart">
+                                                <span>$9.99</span>
+                                            </button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="products-grid">
+                                <div class="products-card">
+                                    <a>
+                                        <div class="product-img">
+                                            <img src="../../img/mock.jpg">
+                                            <span class="product-badge">DLC</span>
+                                        </div>
+
+                                        <div class="product-card-content">
+                                            <div class="product-card-content-wrapper">
+                                                <h3 class="product-title">
+                                                    (DLC)Middle-earth Shadow of Mordor - GOTY Edition upgrade
+                                                </h3>
+                                                <div style="display: flex">
+                                                    <ul class="product-os-info">
+                                                        <li title="Windows">
+                                                            <i class="fa fa-windows">
+                                                                
+                                                            </i>
+                                                            
+                                                        </li>
+
+                                                    </ul>
+
+                                                    <ul class="product-drm-info">
+                                                        <li>
+                                                            <i class="fa fa-steam"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="product-card-footer">
+                                            <button class="product-btn-add-to-cart">
+                                                <span>$9.99</span>
+                                            </button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="products-grid">
+                                <div class="products-card">
+                                    <a>
+                                        <div class="product-img">
+                                            <img src="../../img/mock.jpg">
+                                            <span class="product-badge">DLC</span>
+                                        </div>
+
+                                        <div class="product-card-content">
+                                            <div class="product-card-content-wrapper">
+                                                <h3 class="product-title">
+                                                    (DLC)Middle-earth Shadow of Mordor - GOTY Edition upgrade
+                                                </h3>
+                                                <div style="display: flex">
+                                                    <ul class="product-os-info">
+                                                        <li title="Windows">
+                                                            <i class="fa fa-windows">
+                                                                
+                                                            </i>
+                                                            
+                                                        </li>
+
+                                                    </ul>
+
+                                                    <ul class="product-drm-info">
+                                                        <li>
+                                                            <i class="fa fa-steam"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="product-card-footer">
+                                            <button class="product-btn-add-to-cart">
+                                                <span>$9.99</span>
+                                            </button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="products-grid">
+                                <div class="products-card">
+                                    <a>
+                                        <div class="product-img">
+                                            <img src="../../img/mock.jpg">
+                                            <span class="product-badge">DLC</span>
+                                        </div>
+
+                                        <div class="product-card-content">
+                                            <div class="product-card-content-wrapper">
+                                                <h3 class="product-title">
+                                                    (DLC)Middle-earth Shadow of Mordor - GOTY Edition upgrade
+                                                </h3>
+                                                <div style="display: flex">
+                                                    <ul class="product-os-info">
+                                                        <li title="Windows">
+                                                            <i class="fa fa-windows">
+                                                                
+                                                            </i>
+                                                            
+                                                        </li>
+
+                                                    </ul>
+
+                                                    <ul class="product-drm-info">
+                                                        <li>
+                                                            <i class="fa fa-steam"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="product-card-footer">
+                                            <button class="product-btn-add-to-cart">
+                                                <span>$9.99</span>
+                                            </button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="products-grid">
+                                <div class="products-card">
+                                    <a>
+                                        <div class="product-img">
+                                            <img src="../../img/mock.jpg">
+                                            <span class="product-badge">DLC</span>
+                                        </div>
+
+                                        <div class="product-card-content">
+                                            <div class="product-card-content-wrapper">
+                                                <h3 class="product-title">
+                                                    (DLC)Middle-earth Shadow of Mordor - GOTY Edition upgrade
+                                                </h3>
+                                                <div style="display: flex">
+                                                    <ul class="product-os-info">
+                                                        <li title="Windows">
+                                                            <i class="fa fa-windows">
+                                                                
+                                                            </i>
+                                                            
+                                                        </li>
+
+                                                    </ul>
+
+                                                    <ul class="product-drm-info">
+                                                        <li>
+                                                            <i class="fa fa-steam"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="product-card-footer">
+                                            <button class="product-btn-add-to-cart">
+                                                <span>$9.99</span>
+                                            </button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="products-grid">
+                                <div class="products-card">
+                                    <a>
+                                        <div class="product-img">
+                                            <img src="../../img/mock.jpg">
+                                            <span class="product-badge">DLC</span>
+                                        </div>
+
+                                        <div class="product-card-content">
+                                            <div class="product-card-content-wrapper">
+                                                <h3 class="product-title">
+                                                    (DLC)Middle-earth Shadow of Mordor - GOTY Edition upgrade
+                                                </h3>
+                                                <div style="display: flex">
+                                                    <ul class="product-os-info">
+                                                        <li title="Windows">
+                                                            <i class="fa fa-windows">
+                                                                
+                                                            </i>
+                                                            
+                                                        </li>
+
+                                                    </ul>
+
+                                                    <ul class="product-drm-info">
+                                                        <li>
+                                                            <i class="fa fa-steam"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="product-card-footer">
+                                            <button class="product-btn-add-to-cart">
+                                                <span>$9.99</span>
+                                            </button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="container-footer">
+                        <a>
+                            <span><i class="fa fa-angle-down"></i>View more</span>
+                        </a>
+                    </footer>
+                </div>
+
+                <div class="share">
+                    <h3 class="share-title">Share</h3>
+                    <ul >
+                        <li>
+                            <i class="icon fa fa-facebook"></i>
+                        </li>
+
+                        <li>
+                            <i class="icon fa fa-facebook"></i>
+                        </li>
+
+                        <li>
+                            <i class="icon fa fa-facebook"></i>
+                        </li>
+                    </ul>
+                </div>
+            </main>
+
+            <footer id="footer">
+                <section class="payment-options">
+                    <div class="payment-option">
+                        <h3 class="payment-option-title">Service</h3>
+                        <ul class="payment-option-list">
+                            <img class="payment-icon" src="../../img/payment.png"></img>
+                        </ul>
+                    </div>
+
+                    <div class="payment-option">
+                        <h3 class="payment-option-title">Credit Card</h3>
+                        <ul class="payment-option-list">
+                            <img class="payment-icon" src="../../img/payment.png"></img>
+                            <img class="payment-icon" src="../../img/payment.png"></img>
+                            <img class="payment-icon" src="../../img/payment.png"></img>
+                            <img class="payment-icon" src="../../img/payment.png"></img>
+                        </ul>
+                    </div>
+                </section>
+                <div class="footer-container">
+                    <section class="footer-row" style="border-bottom: 1px solid white">
+                        <nav class="footer-nav">
+                            <ul>
+                                <li>
+                                    <a>Home</a>
+                                </li>
+                                <li>
+                                    <a>Game</a>
+                                </li>
+                                <li>
+                                    <a>About</a>
+                                </li>
+                                <li>
+                                    <a>Support</a>
+                                </li>
+                                <li>
+                                    <a>MyAccount</a>
+                                </li>
+                            </ul>
+
+                        </nav>
+                        <div class="footer-dropdown">
+                            <div id="language">
+                                <span class="dropdown-label">Language</span>
+                                <div class="dropdown-small">
+                                    <a class="dropdown-toggle ">English</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a>Progutes</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="footer-row" style="display: flex">
+                        <nav class="footer-social-nav">
+                            <h4 class="footer-title">Follow us</h4>
+                            <ul>
+                                <li>
+                                    <a class="btn-social">
+                                        <i class="fa fa-facebook"></i>FACEBOOK
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="btn-social">
+                                        <i class="fa fa-youtube"></i>Youtube
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="btn-social">
+                                        <i class="fa fa-twitter"></i>Twitter
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="btn-social">
+                                        <i class="fa fa-google"></i>Google
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="footer-newsletter">
+                            <h4 class="footer-title">ENJOY DISCOUNTS?</h4>
+                            <form>
+                                <input>
+                                <button>subscribe!</button>
+                            </form>
+                        </div>
+                    </section>
+
+                    <section class="footer-row" >
+                        <div class="footer-logo">
+                            <a class="logo">
+                                <img src="http://dskhvldhwok3h.cloudfront.net/assets/fe/images/logo-nuuvem-contrast-28c4275a3339894d051da6dc86486708.svg"/>
+                            </a>
+                            <small>© 2017</small>
+                        </div>
+                        <div class="footer-legal">
+                            <ul>
+                                <li>
+                                    <a>Terms of Use</a>
+                                </li>
+                                <li>
+                                    <a>Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-company">
+                            <p>Nuuvem Inc.</p>
+                        </div>
+                        <div class="clear"></div>
+                    </section>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

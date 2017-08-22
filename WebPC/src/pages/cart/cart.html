@@ -1,0 +1,409 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>React</title>
+    <!--[if lt IE 9]>
+        <script src="../../lib/html5shiv/html5shiv-printshiv.min.js"></script>
+        <![endif]-->
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../dist/css/index.css">
+</head>
+
+<body>
+    <!--React app-->
+    <div id="app">
+        <!--头部导航栏-->
+        <header class="header">
+            <div class="header-wrapper">
+                <div class="header-logo">
+                    <a class="link" href="https://www.nuuvem.com/"></a>
+                </div>
+                <div class="header-cart">
+                    <a class="link" href="javascript:;">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="cart-num">0</span>
+                    </a>
+                    <ul class="drop-items">
+                        <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                        <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                        <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                        <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">Sign out</span></a></li>
+                    </ul>
+                </div>
+                <div class="header-nav">
+                    <nav class="nav-wrapper">
+                        <div class="nav-item games">
+                            <a href="javascript:;">
+                                <i class="fa fa-gamepad"></i>
+                                <span class="text">GAMES</span>
+                            </a>
+                            <ul class="drop-items">
+                                <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-item deals">
+                            <a href="javascript:;">
+                                <i class="fa fa-tags"></i>
+                                <span class="text">DEALS</span>
+                            </a>
+                            <ul class="drop-items">
+                                <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-item account">
+                            <a href="javascript:;">
+                                <img class="acc-icon" src="http://dskhvldhwok3h.cloudfront.net/assets/fe/images/avatar-90fda28ac2f803f1c30ad92f6ea22858.jpg" alt="">
+                                <span class="acc-name">Young</span>
+                            </a>
+                            <ul class="drop-items">
+                                <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">Sign out</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="search">
+                            <div class="search-wrapper">
+                                <input placeholder="Search for Games" type="text" class="input" />
+                                <a class="icon">
+                                    <i class="fa fa-search"></i>
+                                    <span class="text">&nbsp;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!--主区域-->
+        <main class="main">
+            <!--购物车页-->
+            <div class="container cart-container">
+                <div class="grid-container">
+                    <header class="head head__large">
+                        <div class="grid l-50 m-50 s-50 xs-100">
+                            <h1 class="head-title">My Cart</h1>
+                        </div>
+                        <div class="grid l-50 m-50 s-50 xs-100 text__right hide-on-xs">
+                            <a class="btn btn__primary" href="https://www.nuuvem.com/catalog">
+                                <i class="icon icon-arrow-left"></i> Continue Shopping
+                            </a>
+                        </div>
+                    </header>
+
+                    <section class="cart-section cart-section--products">
+                        <section class="cart-products--list products-dock products-dock__cards products-dock__cards__grid-1 products-dock__cards__group hide">
+                            <div class="cart-products--list--head box--head">
+                                <div>
+                                    Product
+                                </div>
+
+                                <div>
+                                    Price
+                                </div>
+                            </div>
+
+                            <div class="cart-products--list--body box--body">
+                                <div class="cart-products--list--body box--body">
+                                    <div class="product-card product-card__banner-expanded" data-product-id="58a611452162483df500037c">
+                                        <div class="product-card--wrapper">
+                                            <div class="product-img hide-down-l">
+                                                <a href="https://www.nuuvem.com/item/1000-heads-among-trees" title="Go to the game's page">
+                                                    <img alt="1000 Heads Among the Trees" src="https://dskhvldhwok3h.cloudfront.net/image/upload/v1487278074/products/58a60ba121624853160001b4/banners/r6fsvjdvobm7dtcpdmxm.jpg">
+                                                </a>
+                                            </div>
+
+                                            <div class="product-card--content">
+                                                <a href="https://www.nuuvem.com/item/1000-heads-among-trees" title="Go to the game's page">
+                                                    <h3 class="product-title">1000 Heads Among the Trees</h3>
+
+
+                                                    <ul class="product-os-info">
+                                                        <li>
+                                                            <i class="fa fa-windows"></i>
+                                                            <span>Windows</span>
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fa fa-apple"></i>
+                                                            <span>Mac</span>
+                                                        </li>
+                                                    </ul>
+
+
+                                                    <div class="product-drm">Steam</div>
+
+                                                    <div class="message message__warning"><i class="fa fa-exclamation-circle"></i> This item is unavailable in your country</div>
+                                                </a>
+                                            </div>
+
+                                            <div class="product-card--aside">
+                                                <div class="mod-price product-price product-price__small">
+                                                    <span class="product-price--val">
+            <span class="product-price--old"></span>
+                                                    <sup class="currency-symbol">$</sup><span class="integer">6</span><span class="decimal">.99</span>
+                                                    </span>
+                                                </div>
+
+                                                <a href="#" class="product-btn-remove" data-action="cartItem:remove">
+            Remove
+          </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+
+                        <!--<section class="cart-products--empty box hide">
+  <div class="box--body box--wrap">
+    <p>There are no items in your cart :(</p>
+
+    <a class="btn btn__primary" href="https://www.nuuvem.com/">Back to the homepage</a>
+  </div>
+</section>-->
+
+                        <div class="cart-loader">
+                            <i class="icon icon-loading icon-spin"></i>
+                        </div>
+
+                        <div id="cart-products-notice-warning" class="cart-products--notice notice notice__warning hide">
+                            <h4 class="font__bold">
+                                <i class="icon icon-alert"></i> Attention:
+                            </h4>
+
+                            <ul>
+                                <li>Some products in your cart seem to be unavailable in your country</li>
+                            </ul>
+                        </div>
+
+                        <div class="cart-products--notice notice">
+                            <h4 class="font__bold">
+                                <i class="fa fa-exclamation-circle"></i> Important information:
+                            </h4>
+
+                            <ul>
+                                <li>All items are delivered digitally by download and are not refundable.</li>
+                                <li>Check the system requirements on each game's page and the Terms of Use before making your purchase.</li>
+                                <li>It is not possible to purchase more than one copy of the same game through the same Nuuvem account.</li>
+
+                            </ul>
+                        </div>
+
+                        <script type="text/html" data-template-name="cart-item-contents">
+                            <li>
+                                <h4>:name</h4>
+                                :os :drm
+                            </li>
+                        </script>
+
+                        <script type="text/html" data-template-name="cart-item-drm">
+                            <div class="product-drm">:drm</div>
+                        </script>
+
+                        <script type="text/html" data-template-name="cart-item-os">
+                            <ul class="product-os-info">:os</ul>
+                        </script>
+
+                        <script type="text/html" data-template-name="cart-item-os-list">
+                            <li>
+                                <i class="icon icon-:id"></i>
+                                <span>:name</span>
+                            </li>
+                        </script>
+
+                        <script type="text/html" data-template-name="cart-item">
+                            <div class="product-card product-card__banner-expanded" data-product-id=":product_id">
+                                <div class="product-card--wrapper">
+                                    <div class="product-img hide-down-l">
+                                        <a href=":link" title="Go to the game&#39;s page">
+                                            <img alt=":name" src="https://dskhvldhwok3h.cloudfront.net/image/upload/:image_id" />
+                                        </a>
+                                    </div>
+
+                                    <div class="product-card--content">
+                                        <a href=":link" title="Go to the game&#39;s page">
+                                            <h3 class="product-title">:name</h3>
+                                            :contents :os :drm :error_messages
+                                        </a>
+                                    </div>
+
+                                    <div class="product-card--aside">
+                                        <div class="mod-price product-price product-price__small">
+                                            <span class="product-price--val">
+            <span class="product-price--old">:formatted_base_value_with_currency</span> :formatted_value_with_currency
+                                            </span>
+                                        </div>
+
+                                        <a href="#" class="product-btn-remove" data-action="cartItem:remove">
+            Remove
+          </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </script>
+
+                    </section>
+
+                    <section class="cart-section cart-section--payment">
+                        <div class="cart-payment--options hide box">
+                            <div class="box--head">
+                                Payment Methods
+                            </div>
+
+                            <div class="box--body">
+
+
+
+                                <div class="cart-payment--option hide" data-payment-option="paypal">
+                                    <label class="cart-payment--option--label" for="payment_option_557ca3d469702d23530000c1">
+          <input type="radio" class="field-radio" name="payment_option" value="paypal" id="payment_option_557ca3d469702d23530000c1">
+          <span class="cart-payment--option--name" title="PayPal">PayPal</span>
+
+            <ul class="cart-payment--option--list">
+              <li>
+                <i class="payment-icon payment-icon-visa" title="Visa">Visa</i>
+              </li>
+              <li>
+                <i class="payment-icon payment-icon-mastercard" title="MasterCard">MasterCard</i>
+              </li>
+              <li>
+                <i class="payment-icon payment-icon-amex" title="Amex">Amex</i>
+              </li>
+              <li>
+                <i class="payment-icon payment-icon-elo" title="Elo">Elo</i>
+              </li>
+              <li>
+                <i class="payment-icon payment-icon-hiper" title="Hiper">Hiper</i>
+              </li>
+              <li>
+                <i class="payment-icon payment-icon-hipercard" title="Hipercard">Hipercard</i>
+              </li>
+            </ul>
+        </label>
+
+                                    <a class="cart-payment--option--help fa-question-circle fa" data-toggle="modal" data-target="#cart-payment-option-paypal-help" title="How does it work?"></a>
+
+                                    <div id="cart-payment-option-paypal-help" class="modal hide-modal">
+                                        <div class="modal--dialog">
+                                            <div class="modal--header">
+                                                <h2>PayPal</h2>
+                                                <button class="modal--close" data-toggle="modal" data-target="self"></button>
+                                            </div>
+
+                                            <div class="modal--main">
+                                                <div class="grid content">
+                                                    <p>PayPal offers payments safely&nbsp;via Web , ease and agility. Create or sign into your PayPal account to register and authorize your credit card to avoid providing personal information on every purchase
+                                                        made.
+                                                    </p>
+
+                                                    <table style="width:100%">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Processing Time</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Transactions via PayPal are processed immediately after the purchase is confirmed so your order will be available right away. In some cases your payment may go through a Paypal risk analysis
+                                                                    process which might increase the processing time of your order.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-payment--free hide-modal box">
+                            <div class="box--body box--wrap">
+                                <div class="cart-payment--free--message">
+                                    Hurray! You don't have to pay for your order! :)
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-loader">
+                            <i class="icon icon-loading icon-spin"></i>
+                        </div>
+
+                        <section id="cart-payment-loader" class="modal cart-payment--loader hide-modal" data-options="{&quot;enableDefaultClose&quot;:false}">
+                            <div class="modal--dialog">
+                                <div class="modal--main">
+                                    <div class="cart-payment--loader--content">
+                                        <h3>Please wait...</h3>
+                                        <p>We are processing your order!</p>
+                                    </div>
+
+                                    <div id="cart-payment-progress" data-options="{&quot;val&quot;:0,&quot;minVal&quot;:0,&quot;maxVal&quot;:0}" class="cart-payment--loader--progress progress"></div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="cart-payment--actions box">
+                            <div class="box--body">
+
+                                <div class="cart-payment--discount-form--row box--row">
+                                    <fieldset>
+                                        <label class="form-legend" for="discount-coupon">
+          Promo code
+        </label>
+
+                                        <div class="field-group">
+                                            <input id="discount-coupon" name="discount_coupon" placeholder="Coupon" type="text" maxlength="200" class="field frm-ticket">
+                                            <button type="submit" class="btn" data-labels="{&quot;apply&quot;:&quot;Apply&quot;,&quot;remove&quot;:&quot;Remove&quot;}">Apply</button>
+                                        </div>
+
+                                        <label for="discount-coupon" data-validation-for="discount_coupon" class="field-validation"></label>
+                                    </fieldset>
+                                </div>
+
+                                <div class="cart-payment--discount-value--row box--row hide-modal">
+                                    <div class="cart-payment--value cart-payment--value__discount">
+                                        <div>
+                                            <i class="icon icon-success"></i> Discount added
+                                        </div>
+
+                                        <div data-control="cart.payment.discountValue" class="mod-price"></div>
+                                    </div>
+                                </div>
+
+                                <div class="box--row">
+                                    <div class="cart-payment--total-value--row cart-payment--value">
+                                        <div>
+                                            Total
+                                        </div>
+
+                                        <div data-control="cart.payment.totalValue" class="mod-price font__xlarge">
+                                            <div data-control="cart.payment.totalValue" class="mod-price font__xlarge"><sup class="currency-symbol">$</sup><span class="integer">6</span><span class="decimal">.99</span></div>
+                                        </div>
+                                    </div>
+
+                                    <button id="checkout-now" class="cart-payment--btn-action btn btn__action btn__full" disabled="disabled">
+        <i class="icon icon-cart-fast"></i>
+        Checkout
+      </button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

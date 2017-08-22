@@ -1,0 +1,152 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>React</title>
+        <!--[if lt IE 9]>
+        <script src="../../lib/html5shiv/html5shiv-printshiv.min.js"></script>
+        <![endif]-->
+        <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../dist/css/index.css">
+    </head>
+    <body>
+        <!--React app-->
+        <div id="app">
+            <!--头部导航栏-->
+            <header class="header">
+                <div class="header-wrapper">
+                    <div class="header-logo">
+                        <a class="link" href="https://www.nuuvem.com/"></a>
+                    </div>
+                    <div class="header-cart">
+                        <a class="link" href="javascript:;">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="cart-num">0</span>
+                        </a>
+                        <ul class="drop-items">
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">Sign out</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="header-nav">
+                        <nav class="nav-wrapper">
+                            <div class="nav-item games">
+                                <a href="javascript:;">
+                                    <i class="fa fa-gamepad"></i>
+                                    <span class="text">GAMES</span>
+                                </a>
+                                <ul class="drop-items">
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-item deals">
+                                <a href="javascript:;">
+                                    <i class="fa fa-tags"></i>
+                                    <span class="text">DEALS</span>
+                                </a>
+                                <ul class="drop-items">
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-item account">
+                                <a href="javascript:;">
+                                    <img class="acc-icon" src="http://dskhvldhwok3h.cloudfront.net/assets/fe/images/avatar-90fda28ac2f803f1c30ad92f6ea22858.jpg" alt="">
+                                    <span class="acc-name">Young</span>
+                                </a>
+                                <ul class="drop-items">
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">Sign out</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="search">
+                                <div class="search-wrapper">
+                                    <input placeholder="Search for Games" type="text" class="input" />
+                                    <a class="icon">
+                                        <i class="fa fa-search"></i>
+                                        <span class="text">&nbsp;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <!--主区域-->
+            <main class="main">
+                <!--注册登录页-->
+                <div id="main-content container login-container">
+                    <section id="sign-in">
+                        <h1 id="h">登录</h1>
+                        <div class="content">
+                            <section id="connect">
+                                <a>Q Q</a>
+                                <a>微信</a>
+                            </section>
+                            <div id="or">
+                                <div></div>
+                            </div>
+                            <div id="RL">
+                                <section id="register">
+                                    <h2>注册</h2>
+                                    <form>
+                                        <div>
+                                            <input type="text" id="reg-email" placeholder="*邮箱">
+
+                                        </div>
+                                        <div data-icon="required">
+                                            <input type="password" id="reg-password" placeholder="*密码">
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="checkbox_1">
+                                            <label for="checkbox_1"></label>
+                                            <label for="checkbox_1"> 同意使用邮箱接受相关推送</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="checkbox_2">
+                                            <label for="checkbox_2"></label>
+                                            <label for="checkbox_2"> 已阅读且同意相关<a href=#>服务条款</a></label>
+                                        </div>
+                                        <div>
+                                            <button type="submit" id="register_sub">注册</button>
+                                        </div>
+                                    </form>
+                                </section>
+                                <section id="login">
+                                    <h2>登录</h2>
+                                    <form>
+                                        <div>
+                                            <input type="text" id="log-email" placeholder="*邮箱">
+                                        </div>
+                                        <div>
+                                            <input type="password" id="log-password" placeholder="*密码">
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="checkbox_3">
+                                            <label for="checkbox_3"></label>
+                                            <label for="checkbox_3"> 记住密码</label>
+                                        </div>
+                                        <div>
+                                            <label><a href=#>忘记密码</a></label>
+                                        </div>
+                                        <div id="log_sub_f">
+                                            <button type="submit" id="log_sub">登录</button>
+                                        </div>
+                                    </form>
+                                </section>
+                            </div>
+
+                        </div>
+                    </section>
+                    <div>
+            </main>
+        </div>
+    </body>
+</html>

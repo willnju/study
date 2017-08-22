@@ -1,0 +1,77 @@
+/**
+ * @file base.scss
+ * @desc 基础样式，导入第三方样式、重置元素样式、定义全局公用变量或函数
+ * @author wangyong(1223427693@qq.com)
+ */
+@import '../../../node_modules/node.normalize.scss/normalize';
+@import '../../lib/NProgress/nprogress';
+@import '../../../node_modules/react-select/scss/default';
+
+// 覆盖nprogress样式
+#nprogress {
+    .bar {
+        z-index: 999999;
+    }
+    .spinner {
+        z-index: 999999;
+        top: 22px;
+        left: 15px;
+    }
+}
+
+$cxtMinWidth: 1200px;
+$cxtMaxWidth: 1200px;
+
+// 通用背景样式
+@mixin normalBackgroundStyle {
+    background: {
+        repeat: no-repeat;
+        size: cover;
+        position: center;
+    }
+}
+
+.func-clearfix {
+    &:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        clear: both;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+    font-weight: lighter;
+    height: 100%;
+}
+body {
+    min-width: $cxtMinWidth;
+    background: #ccc;
+}
+a {
+    text-decoration: none;
+    color: #09c;
+}
+ul {
+    list-style: none;
+}
+input:focus {
+    outline: none;
+}
+
+#app, .root-app {
+    height: 100%;
+}
+
+main, .main {
+    margin-top: 60px;
+    min-height: 100%;
+    padding-bottom: 250px;
+}

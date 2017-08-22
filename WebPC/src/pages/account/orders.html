@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>React</title>
+        <!--[if lt IE 9]>
+        <script src="../../lib/html5shiv/html5shiv-printshiv.min.js"></script>
+        <![endif]-->
+        <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../dist/css/index.css">
+    </head>
+    <body>
+        <!--React app-->
+        <div id="app">
+            <!--头部导航栏-->
+            <header class="header">
+                <div class="header-wrapper">
+                    <div class="header-logo">
+                        <a class="link" href="https://www.nuuvem.com/"></a>
+                    </div>
+                    <div class="header-cart">
+                        <a class="link" href="javascript:;">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="cart-num">0</span>
+                        </a>
+                        <ul class="drop-items">
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">Sign out</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="header-nav">
+                        <nav class="nav-wrapper">
+                            <div class="nav-item games">
+                                <a href="javascript:;">
+                                    <i class="fa fa-gamepad"></i>
+                                    <span class="text">GAMES</span>
+                                </a>
+                                <ul class="drop-items">
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-item deals">
+                                <a href="javascript:;">
+                                    <i class="fa fa-tags"></i>
+                                    <span class="text">DEALS</span>
+                                </a>
+                                <ul class="drop-items">
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-item account">
+                                <a href="javascript:;">
+                                    <img class="acc-icon" src="http://dskhvldhwok3h.cloudfront.net/assets/fe/images/avatar-90fda28ac2f803f1c30ad92f6ea22858.jpg" alt="">
+                                    <span class="acc-name">Young</span>
+                                </a>
+                                <ul class="drop-items">
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">Sign out</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="search">
+                                <div class="search-wrapper">
+                                    <input placeholder="Search for Games" type="text" class="input" />
+                                    <a class="icon">
+                                        <i class="fa fa-search"></i>
+                                        <span class="text">&nbsp;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <!--主区域-->
+            <main class="main">
+                <div class="container account-container">
+                    <section class="account-section">
+                        <ul class="account-nav func-clearfix">
+                            <li class="nav-item">
+                                <a href="javascript:;">My Games</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="javascript:;">My Orders</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:;">My Account</a>
+                            </li>
+                        </ul>
+
+                        <!--我的订单-->
+                        <section class="account-orders">
+                            <table class="order-table">
+                                <thead>
+                                    <tr>
+                                        <th>Number</th>
+                                        <th>Product</th>
+                                        <th>Payment</th>
+                                        <th>Total</th>
+                                        <th>Status</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#2004455702064717</td>
+                                        <td class="product">
+                                            <ul>
+                                                <li>Heavy Metal Machines</li>
+                                                <li>Naruto Online</li>
+                                            </ul>
+                                        </td>
+                                        <td>$ 0,00</td>
+                                        <td>$ 0,00</td>
+                                        <td>Released</td>
+                                        <td>2017-04-08</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#2004455702064717</td>
+                                        <td class="product">
+                                            <ul>
+                                                <li>Heavy Metal Machines</li>
+                                                <li>Naruto Online</li>
+                                            </ul>
+                                        </td>
+                                        <td>$ 0,00</td>
+                                        <td>$ 0,00</td>
+                                        <td>Released</td>
+                                        <td>2017-04-08</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

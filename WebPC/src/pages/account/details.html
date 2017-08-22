@@ -1,0 +1,172 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>React</title>
+        <!--[if lt IE 9]>
+        <script src="../../lib/html5shiv/html5shiv-printshiv.min.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="../../../dist/css/index.css">
+    </head>
+    <body>
+        <!--React app-->
+        <div id="app">
+            <!--头部导航栏-->
+            <header class="header">
+                <div class="header-wrapper">
+                    <div class="header-logo">
+                        <a class="link" href="https://www.nuuvem.com/"></a>
+                    </div>
+                    <div class="header-cart">
+                        <a class="link" href="javascript:;">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="cart-num">0</span>
+                        </a>
+                        <ul class="drop-items">
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                            <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">Sign out</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="header-nav">
+                        <nav class="nav-wrapper">
+                            <div class="nav-item games">
+                                <a href="javascript:;">
+                                    <i class="fa fa-gamepad"></i>
+                                    <span class="text">GAMES</span>
+                                </a>
+                                <ul class="drop-items">
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-item deals">
+                                <a href="javascript:;">
+                                    <i class="fa fa-tags"></i>
+                                    <span class="text">DEALS</span>
+                                </a>
+                                <ul class="drop-items">
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-item account">
+                                <a href="javascript:;">
+                                    <img class="acc-icon" src="http://dskhvldhwok3h.cloudfront.net/assets/fe/images/avatar-90fda28ac2f803f1c30ad92f6ea22858.jpg" alt="">
+                                    <span class="acc-name">Young</span>
+                                </a>
+                                <ul class="drop-items">
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">New releases</span></a></li>
+                                    <li class="item"><a href="javascript:;"><i class="fa fa-certificate"></i><span class="text">Sign out</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="search">
+                                <div class="search-wrapper">
+                                    <input placeholder="Search for Games" type="text" class="input" />
+                                    <a class="icon">
+                                        <i class="fa fa-search"></i>
+                                        <span class="text">&nbsp;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <!--主区域-->
+            <main class="main">
+                <div class="container account-container">
+                    <section class="account-section">
+                        <ul class="account-nav func-clearfix">
+                            <li class="nav-item">
+                                <a href="javascript:;">My Games</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:;">My Orders</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="javascript:;">My Account</a>
+                            </li>
+                        </ul>
+                        <!--我的账户-->
+                        <section class="account-details">
+                            <div class="account-details-basic func-clearfix">
+                                <div class="avatar"></div>
+                                <div class="info">
+                                    <h3 class="display-name">Young</h3>
+                                    <p class="email">holywangyong@hotmail.com</p>
+                                    <p class="username">youngwang</p>
+                                </div>
+                            </div>
+                            
+                            <div class="account-details-edit">
+                                <div class=" account-nav-container func-clearfix">
+                                    <aside class="nav-aside">
+                                        <ul class="nav">
+                                            <li class="nav-item active"><a href="javascript:;">My Account</a></li>
+                                            <li class="nav-item"><a href="javascript:;">Change Password</a></li>
+                                            <li class="nav-item"><a href="javascript:;">Change Email</a></li>
+                                        </ul>
+                                    </aside>
+                                    <div class="nav-content">
+                                        <!--My account tab content-->
+                                        <div class="edit-account">
+                                            <h2 class="content-title">My Account</h2>
+                                            <h3 class="detail-title">Public Information</h3>
+                                            <p class="detail-info">This information will be displayed publicly</p>
+                                            <div class="detail-group">
+                                                <label for="disName">Display Name</label>
+                                                <input type="text" id="disName" value="Young">
+                                            </div>
+                                            <h3 class="detail-title">Personal Information</h3>
+                                            <p class="detail-info">Personal information. It won't be displayed publicly.</p>
+                                            <div class="detail-group">
+                                                <label for="username">Login</label>
+                                                <input type="text" disabled id="username" value="younwang">
+                                            </div>
+                                            <div class="detail-group">
+                                                <label for="firstName">First Name</label>
+                                                <input type="text" id="firstName" value="Young">
+                                            </div>
+                                            <div class="detail-group">
+                                                <label for="lastName">Last Name</label>
+                                                <input type="text" id="lastName" value="Wang">
+                                            </div>
+                                            <div class="btn-group func-clearfix">
+                                                <a href="javascript:;" class="btn btn-save"><i class="fa fa-check"></i>SAVE CHANGES</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="edit-password">
+                                            <h2 class="content-title">Change Password</h2>
+                                            <div class="detail-group">
+                                                <label for="newpass">New Password</label>
+                                                <input type="text" id="newpass" value="">
+                                            </div>
+                                            <div class="detail-group">
+                                                <label for="confirmPass">Confirm Password</label>
+                                                <input type="text" id="confirmPass" value="">
+                                            </div>
+                                            <div class="detail-group">
+                                                <label for="currPass">Current Password</label>
+                                                <input type="text" id="currPass" value="">
+                                            </div>
+                                            <div class="btn-group func-clearfix">
+                                                <a href="javascript:;" class="btn btn-save"><i class="fa fa-check"></i>SAVE CHANGES</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

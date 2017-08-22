@@ -1,0 +1,262 @@
+// 输入框样式
+@mixin input-box{
+  cursor: pointer;
+  padding: 10px 10px;
+          width: 100%;
+          margin-top: 10px;
+          border: 1px solid;
+          border-radius: 5px;
+          border-left-width: 40px;
+          border-color: #ddd;
+          display: inline-block;
+          -moz-transition:border-color 0.5s; /* Firefox 4 */
+          -webkit-transition:border-color 0.5s; /* Safari and Chrome */
+          -o-transition:border-color 0.5s; /* Opera */
+          &:hover{
+             border-color: #09c;
+            -moz-transition:border-color 1s; /* Firefox 4 */
+            -webkit-transition:border-color 1s; /* Safari and Chrome */
+            -o-transition:border-color 1s; /* Opera */
+          }
+          &:focus{
+            border-color: #09c;
+          }
+}
+// 按钮样式
+@mixin button{
+  padding:  8px 19px;
+  outline: none;
+  border-radius: 5px;
+  background-color: #09c;
+  border: none;
+  color: #FFF;
+  font-size: 1.1em;
+  &:hover{
+    background-color: #0be;
+  }
+  &:active{
+    background-color: #0bd;
+  }
+}
+#sign-in{
+  margin: 90px;
+  #h{
+    text-align: center;
+  }
+  #content{
+    width: 750px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color:#fff;
+    border: 1px transparent solid;
+    #connect{
+      font-size: 14px;
+      text-align: center;
+      margin: 40px auto;
+      a{
+        cursor: pointer;
+        padding:7px 10px;
+        margin: 13px;
+        background-color: #09c;
+        color:#FFF;
+        border-radius: 1000px;
+        font-size: 1.3em;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+        &:hover{
+          border-top: 1px solid #0be;
+          background: #0be;
+        }
+        &:active{
+          border-top: none;
+        }
+        &:nth-child(2){
+          background-color: #09c;
+          border-top: 1px solid #09c;
+        }
+        &:nth-child(2):hover{
+          background-color: #0be;
+          border-top: 1px solid #0be;
+        }
+        &:nth-child(2):active{
+          border-top: none;
+        }
+        &:nth-child(3){
+          i{
+            background-image: url(../../static/steam.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            padding: 0 11px;
+          }
+          background-color: #09c;
+          border-top: 1px solid #09c;
+        }
+        &:nth-child(3):hover{
+          background-color: #0be;
+          border-top: 1px solid #0be;
+        }
+        &:nth-child(3):active{
+          border-top: none;
+        }
+        span{
+          width: 87px;
+          display: inline-block
+        }
+      }
+    }
+    #or{
+      margin: 0 auto;
+      width: 90%;
+      height: 1px;
+      text-align: center;
+      background: #C1CACA;
+      div{
+        cursor: pointer;
+        border: 1px solid #C1CACA;
+        width: 17px;
+        height: 17px;
+        background-color: #C1CACA;
+        transform:rotate(45deg);
+        -ms-transform:rotate(45deg);
+        -moz-transform:rotate(45deg);
+        -webkit-transform:rotate(45deg);
+        -o-transform:rotate(45deg);
+        margin: 0 auto;
+        position: relative;
+        top: -8px;
+        border-radius: 2px;
+      }
+    }
+    #RL{
+      width: 90%;
+      margin:30px auto;
+      .input-box{
+          @include input-box;
+      }
+      i{
+            position: absolute;
+            margin: 22px 10px;
+            color: whitesmoke;
+            font-size: larger
+      }
+      .button{
+        @include button
+      }
+      
+      #register{
+        float: left;
+        width: 48%;
+        form{
+          font-size: 15px;
+          &>div{
+            margin-bottom: 6px;
+          }
+        }
+      }
+      #login{
+        margin-left: 4%;
+        font-size: 15px;
+        float: left;
+        width: 48%;
+        form{
+          &>div{
+            margin-bottom: 6px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/*忘记密码部分*/
+@mixin button-style{
+  padding:  8px 19px;
+  outline: none;
+  border-radius: 5px;
+  background-color: #09c;
+  border: none;
+  color: #FFF;
+  font-size: 1.1em;
+    &:hover{
+      background-color: #0be;
+    }
+    &:active{
+      background-color: #0bd;
+    }
+
+}
+.forgetPassword-wrapper{
+  margin: 88px;
+  position: relative;
+  padding-right: 10px;
+  padding-left: 10px;
+  max-width: 1100px;
+  #password{
+    margin: auto;
+    width: 47.491039426523294%;
+    max-width: 530px;
+    .tt{
+      margin-top: 35px;
+    }
+    .bl-content{
+      margin: 30px 0;
+      p{
+        margin-top: 6px;
+        font-family: 'Open Sans',sans-serif;
+        font-size: 1rem;
+        color: #777;
+        line-height: 150%;
+      }
+      .frm-item-required{
+        position: relative;
+        white-space: nowrap;
+        margin-top: 9px;
+        width: 100%;
+        p{
+          width: 20%;
+          float: left;
+          margin-top:3px;
+          text-align: right;
+        }
+        i{
+            position: absolute;
+            margin: 22px 10px;
+            color: whitesmoke;
+            font-size: larger
+      }
+        .input-box{
+          @include input-box;
+          width: 71%;
+        }
+        .btn-sendCode{
+          margin: 0 8px 7px 9px;
+          padding: 6px 4px 7px !important;
+          @include button-style;
+        }
+      }
+      .frm-item{
+        margin-top: 14px;
+        position: relative;
+        width: 100%;
+        .btn-login{
+          @include button-style;
+        }
+      }
+    }
+    
+  }
+}
+#code{
+  width:80px;
+  height:30px;
+  font-size:20px;
+  font-family:Arial;
+  font-style:italic;
+  font-weight:bold;
+  border:0;
+  letter-spacing:2px;
+  color:blue;
+}
